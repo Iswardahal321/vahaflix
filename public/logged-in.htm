@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <title>Dashboard</title>
+</head>
+<body>
+  <h2>Welcome!</h2>
+  <p>You are logged in as <span id="userEmail"></span></p>
+  <script>
+    document.getElementById('userEmail').innerText = localStorage.getItem('user_email') || 'Unknown';
+  </script>
+</body>
+</html>
